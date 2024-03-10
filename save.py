@@ -1,5 +1,5 @@
 import os
-from urllib.request import urlopen
+import requests
 from urllib.parse import urlparse, urlunparse
 
 def read_links_from_file(file_path):
@@ -17,17 +17,20 @@ def download_html_documents(links, save_directory):
     if not os.path.exists(save_directory):
         os.makedirs(save_directory)
 
-    for index, link in enumerate(links, start=1):
-        full_link = normalize_url(link)
-        try:
-            with urlopen(full_link) as response:
-                html_content = response.read().decode('utf-8')
+    # Use a session to handle cookies and headers
+    with requests.Session() as session:
+        for index, link in enumerate(links, start=1):
+            full_link = normalize_url(link)
+            try:
+                response = session.get(full_link, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'})
+                response.raise_for_status()  # Raise HTTPError for bad responses
+                html_content = response.text
                 file_path = os.path.join(save_directory, f"page_{index}.html")
                 with open(file_path, "w", encoding="utf-8") as file:
                     file.write(html_content)
                 print(f"Page {index} downloaded successfully to {file_path}.")
-        except Exception as e:
-            print(f"Failed to download page {index}. Error: {e}")
+            except requests.exceptions.RequestException as e:
+                print(f"Failed to download page {index}. Error: {e}")
 
 if __name__ == "__main__":
     # Set console text color to lime green
