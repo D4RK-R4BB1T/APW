@@ -37,8 +37,7 @@ The script also will allow you to dump links by files. This allows you to speed 
 
 It requres different files (which I'll add but most notably is blacklist.txt)
 
-Options 4 & 5 May not work. THIS IS A DIRECTORY 
-
+Options 4 & 5 May not work. 
 **THIS IS A DIRECTORY BASED SCRIPT, ENSURE YOU SEGERATE YOUR FILES BEFORE USING**
 
 ### lynx.ps1 
