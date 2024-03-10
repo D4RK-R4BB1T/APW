@@ -1,0 +1,18 @@
+https://search.censys.io
+https://zoomeye.org
+https://shodan.io/
+https://viewdns.info
+https://whois.com/whois/<add_a_domain_or_IP_here>
+https://whoxy.com
+https://osintframework.com
+https://metasleuth.io
+https://freecarrierlookup.com
+https://hlr-lookups.com
+https://thatsthem.com
+https://fastpeoplesearch.com
+https://truepeoplesearch.com
+https://telegra.ph/UniversalSearchBot-Mirror-Zerkalo-06-14 (Bookmark it, it's a telegram bot)
+https://t.me/US2UserBoxBot
+https://search.0t.rocks/
+
+These should help some are paid some are not. Feel free to use whatever you feel comfortable with.

@@ -1,0 +1,15 @@
+.jpg
+.jpeg
+.png
+.gif
+.bmp
+.tiff
+.mp4
+.avi
+.mkv
+.mov
+.wmv
+.flv
+.zip
+.rar
+.7z
