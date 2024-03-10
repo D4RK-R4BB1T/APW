@@ -66,8 +66,11 @@ PS CMD Insta closing: As I said, use the ISE.
 Any other issues figure it out.
 
 #Happy Hunting Follow us on Twitter
-[D4RKR4BB1T47](http://twitter.com/D4RKR4BB1T47 "D4RKR4BB1T47")
-[Creep Bin ](http://twitter.com/creep_bin "Creep Bin ")
+
+[D4RKR4BB1T47](http://twitter.com/D4RKR4BB1T47 "D4RKR4BB1T47") - Pavel M. Kravchenko
+
+
+[Creep Bin ](http://twitter.com/creep_bin "Creep Bin ") Skyler J. Egert
 
 
 # Evil Rabbit Security Inc: Thumping Pedophiles in the head Since 2013
