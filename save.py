@@ -1,6 +1,5 @@
 import os
-import requests
-from bs4 import BeautifulSoup
+from urllib.request import urlopen
 from urllib.parse import urlparse, urlunparse
 
 def read_links_from_file(file_path):
@@ -20,19 +19,15 @@ def download_html_documents(links, save_directory):
 
     for index, link in enumerate(links, start=1):
         full_link = normalize_url(link)
-        response = requests.get(full_link)
-        if response.status_code == 200:
-            html_content = response.text
-            file_path = os.path.join(save_directory, f"page_{index}.html")
-            with open(file_path, "w", encoding="utf-8") as file:
-                file.write(html_content)
-            print(f"Page {index} downloaded successfully to {file_path}.")
-        else:
-            print(f"Failed to download page {index}. Status code: {response.status_code}")
-
-def parse_html_documents():
-    # Add your HTML parsing logic here using BeautifulSoup
-    pass
+        try:
+            with urlopen(full_link) as response:
+                html_content = response.read().decode('utf-8')
+                file_path = os.path.join(save_directory, f"page_{index}.html")
+                with open(file_path, "w", encoding="utf-8") as file:
+                    file.write(html_content)
+                print(f"Page {index} downloaded successfully to {file_path}.")
+        except Exception as e:
+            print(f"Failed to download page {index}. Error: {e}")
 
 if __name__ == "__main__":
     # Set console text color to lime green
