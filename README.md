@@ -65,7 +65,7 @@ PS CMD Insta closing: As I said, use the ISE.
 
 Any other issues figure it out.
 
-#Happy Hunting Follow us on Twitter
+# Happy Hunting Follow us on Twitter
 
 [D4RKR4BB1T47](http://twitter.com/D4RKR4BB1T47 "D4RKR4BB1T47") - Pavel M. Kravchenko
 
