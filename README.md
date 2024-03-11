@@ -25,7 +25,7 @@ As it sounds, Sorts & Removes Duplicates from .txt files
 
 ### Save.py 
 
-Asks user to specify how many pages they wish to download from the /memberlist.php  this one may run into Legal Issues so I advise caution and proper protection.
+Asks user to specify how many pages they wish to download from the /memberlist.php  this one may run into Legal Issues so I advise caution and proper protection. Relies on Memberlist.py which will generate a specified amount of links with queries for pages.
 
 ### DS.py
 Better known as "Domain Sorter" this fixes the issue with directories/docs/args/queries made in the URL by simply removing all that nonsense. e.g. example dot com/member.php?action=profile&amp;uid=1 well, this removes the /member.php?action=profile and leaves you with example dot com this makes using the Sorter.ps1 way easier.
