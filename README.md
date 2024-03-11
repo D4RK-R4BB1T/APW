@@ -43,6 +43,8 @@ Options 4 & 5 May not work.
 ### lynx.ps1 
 A Simple script made specifically for Debian Based Linux Machines, this assumes you have Lynx Browser installed it will ask to specify a .txt file to which you shall give and it'll export a text file now to which you can copy the output to a CLI and let lynx do it's business. It numbers the txt files by name. It's recommend you execute this from a new folder or you'll enjoy the cleanup of the cloned repo.
 
+### Memberlist.py essentially this is used to quickly create pages for the save.py script beginning on Document memberslist.php and quickly adding the following args to the URL /memberlist.php?sort=regdate&order=ascending&perpage=20&page={page_number}" {page_number} will be set by user input if you say 500 you'll get smth that begins with /memberlist.php but will generate 499 more links and each will end in a specific number e.g. /memberlist.php?sort=regdate&order=ascending&perpage=20&page=327 (Page 327 Page links). Works similar to the lynx.ps1 but functions internally. This is created due to the fact that a lot of websites do not use a straightforward Username system and heavily rely on UIDs which outside of breachforums which be easily scraped in a matter of minutes with browser extensions such as Link gopher by filtering the URLs by /User- this will assist in dumping those that will be a pain in the ass.
+
 ### Resources.txt
 My Favorite links and tools for hunting
 
